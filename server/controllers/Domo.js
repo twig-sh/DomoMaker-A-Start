@@ -10,7 +10,7 @@ const makerPage = async (req, res) => {
     return res.render('app', { domos: docs });
   } catch (err) {
     console.log(err);
-    return res.status(500).json({ error: 'Error retrieving domos!' })
+    return res.status(500).json({ error: 'Error retrieving domos!' });
   }
 };
 
